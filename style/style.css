@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: gray;
+    
+}
+.publi{
+    width: 100%;
+    margin-top: 25px;
+    height: 500px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+h2{
+    font-family: cursive;
+}
+p{
+    font-family: cursive;
+}
+a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: x-large;
+    font-weight: 650;
+}
+a:hover{
+    color: black;
+}
+h1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    font-family: 'Rubik Vinyl', cursive;
+}
+header{
+    grid-area: header;
+    background-color: rgb(27, 185, 27);
+    border-bottom: 1px solid black;;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    
+}
+.hojita{
+    width: 25px;
+    height: 25px;
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(27, 185, 27);
+    border-right: 1px solid black;
+}
+section .inicio{
+    grid-area: inicio; 
+}
+section .contenido{
+    grid-area: contenido;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-top: 2px solid black;
+    font-family: cursive;
+}
+
+.grilla{
+    width: 100%;
+    position: relative;
+  
+   min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "nav header"
+    "nav inicio"
+    "nav contenido"
+    "footer footer";
+    grid-template-columns: 12% auto;
+    grid-template-rows: 60px 500px auto 100px;
+}
+button{
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    
+}
+
+
+ul .navear{
+    margin-top: 35px;
+    padding-left: 10px;
+}
+.menu{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.redes{
+    height: 100%;
+    padding-left: 10px;
+}
+.redes h2{
+    display: flex;
+    align-items: center;
+    
+}
+.footerr{
+    width: 20px;
+    height: 20px;
+    
+}
+.pagos{
+    
+    margin-left: 20%;
+}
+.container{
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    justify-content: center;
+   align-items: center;
+   padding-top: 25px;
+}
+.card{
+    
+    width: 20%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.leer{
+    color: rgb(42, 170, 42);
+    
+}
+.leer:hover{
+    
+    color: rgb(29, 32, 168);
+}
+.pieDepagina{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.medios{
+    list-style: none;
+    padding-left: 10px;
+}
+.pagos{
+    border-left: 1px solid black;
+    height: 100px;
+    padding-left: 15px;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/banerinicio2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.fondo{
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(../media/fondo-hojas-verdes-ilustracion-vectorial_118877-42.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#heroInformacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/ecoinformate2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 1px solid black;
+}
+#heroProductos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/productos6.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.interes{
+    padding-top: 20px;
+    border-bottom: 2px solid black;
+}
+.flecha{
+    padding-top: 10px;
+}
+.cuidar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 540px; 
+    height: 300px;
+}
+.special{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#heroNosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/nosotros.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nos{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+.ubicacion{
+   width: 600px; 
+   height: 450px; 
+}
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    
+}
+.container-form h2{
+    margin-bottom: 15px;
+}
+.container-form p{
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 3px;  
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.formulario{
+    border: 2px solid orange;
+    padding: 5px;
+}
+.container-form a:hover{
+    color: #fff;
+}
